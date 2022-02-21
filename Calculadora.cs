@@ -2,28 +2,28 @@ using System;
 
 public class Calculadora
 {
-    public void Suma(int var1, int var2)
+    public void Suma(int sumando1, int sumando2)
     {
         int resultado;
-        resultado = var1 + var2;
-        Console.WriteLine("El resultado de la suma es: " + resultado);
+        resultado = sumando1 + sumando2;
+        Console.WriteLine("El resultado de la suma es "+resultado);
     }
-    public void Resta(int var1, int var2)
+    public void Resta(int minuendo, int sustraendo)
     {
         int resultado;
-        resultado = var1 - var2;
+        resultado = minuendo- sustraendo;
         Console.WriteLine("El resultado de la resta es: " + resultado);
     }
-    public void Multiplicación(int var1, int var2)
+    public void Multiplicación(int multiplicador1, int multiplicado2)
     {
         int resultado;
-        resultado = var1 * var2;
+        resultado = multiplicador1 * multiplicado2;
         Console.WriteLine("El resultado de la multiplicación es: " + resultado);
     }
-    public void División(int var1, int var2)
+    public void División(int dividendo, int divisor)
     {
         int resultado;
-        resultado = var1 / var2;
+        resultado = dividendo / divisor;
         Console.WriteLine("El resultado de la división es: " + resultado);
     }
 }
