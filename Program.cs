@@ -34,16 +34,16 @@ class program
             switch (opcion)
             {
                 case "1":
-                    calculadora.Suma(numero1, numero2);
+                    Calculadora.Suma(numero1 , numero2);
                     break;
                 case "2":
-                    calculadora.Resta(numero1, numero2);
+                    Calculadora.Resta(numero1, numero2);
                     break;
                 case "3":
-                    calculadora.Multiplicación(numero1, numero2);
+                    Calculadora.Multiplicación(numero1, numero2);
                     break;
                 case "4":
-                    calculadora.División(numero1, numero2);
+                    Calculadora.División(numero1, numero2);
                     break;
             }
         }   
