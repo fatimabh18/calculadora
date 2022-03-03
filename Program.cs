@@ -26,19 +26,19 @@ class program
                 numero2 = Int32.Parse(Console.ReadLine());
                 if (opcion == "1")
                 {
-                    calculadora.Suma(numero1, numero2);
+                    Calculadora.Suma(numero1, numero2);
                 }
                 if (opcion == "2")
                 {
-                    calculadora.Resta(numero1, numero2);
+                    Calculadora.Resta(numero1, numero2);
                 }
                 if (opcion == "3")
                 {
-                    calculadora.Multiplicación(numero1, numero2);
+                    Calculadora.Multiplicación(numero1, numero2);
                 }
                 if (opcion == "4")
                 {
-                    calculadora.División(numero1, numero2);
+                    Calculadora.División(numero1, numero2);
                 }
             } 
         }  
