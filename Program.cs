@@ -3,10 +3,11 @@ using Clase.Calculadora;
 
 enum opcionUsuario
 {
-   opcion = 1,
-   opcion2 = 2,
-   opcion3 = 3,
-   opcion4 = 4,
+   Suma = 1,
+   Resta = 2,
+   Multiplicacion = 3,
+   Division = 4,
+   Salir = 0
 }
 class program
 {
@@ -16,7 +17,7 @@ class program
         int numero1 = 0;
         int numero2 = 0;
 
-        while ((int)opcionUsuario.opcion != 5)
+        while ((int)opcionUsuario.Salir != 5)
         {
             Console.WriteLine("******MENU******");
             Console.WriteLine("\n¿Que operacion desea realizar?");
@@ -29,30 +30,29 @@ class program
             opcionUsuario opcion = (opcionUsuario) Convert.ToInt32(Console.ReadLine());
             switch (opcion)
             {
-                case opcionUsuario.opcion:
-                case opcionUsuario.opcion2:
-                case opcionUsuario.opcion3:
-                case opcionUsuario.opcion4:
+                case opcionUsuario.Suma:
+                case opcionUsuario.Resta:
+                case opcionUsuario.Multiplicacion:
+                case opcionUsuario.Division:
                     Console.WriteLine("Introduce un numero");
                     numero1 = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Introduce un segundo número");
                     numero2 = Convert.ToInt32(Console.ReadLine());
                     break;
-                default:
-                    return;
+                
             }
             switch (opcion)
             {
-                case opcionUsuario.opcion:
-                    Calculadora.Suma(numero1 , numero2);
+                case opcionUsuario.Suma:
+                    Calculadora.Suma(numero1, numero2);
                     break;
-                case opcionUsuario.opcion2:
+                case opcionUsuario.Resta:
                     Calculadora.Resta(numero1, numero2);
                     break;
-                case opcionUsuario.opcion3:
+                case opcionUsuario.Multiplicacion:
                     Calculadora.Multiplicación(numero1, numero2);
                     break;
-                case opcionUsuario.opcion4:
+                case opcionUsuario.Division:
                     Calculadora.División(numero1, numero2);
                     break;
             }
