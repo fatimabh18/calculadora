@@ -21,11 +21,11 @@ class program
         {
             Console.WriteLine("******MENU******");
             Console.WriteLine("\n¿Que operacion desea realizar?");
-            Console.WriteLine("Opcion 1:Sumar");
-            Console.WriteLine("Opcion2:Restar");
-            Console.WriteLine("Opcion3:Multiplicar");
-            Console.WriteLine("Opcion4:Dividir");
-            Console.WriteLine("Opcion5:Salir");
+            Console.WriteLine("Opcion 1: Sumar");
+            Console.WriteLine("Opcion 2: Restar");
+            Console.WriteLine("Opcion 3: Multiplicar");
+            Console.WriteLine("Opcion 4: Dividir");
+            Console.WriteLine("Opcion 5: Salir");
             Console.WriteLine("\nElija una opcion");
             opcionUsuario opcion = (opcionUsuario) Convert.ToInt32(Console.ReadLine());
             switch (opcion)
@@ -44,16 +44,16 @@ class program
             switch (opcion)
             {
                 case opcionUsuario.Suma:
-                    Calculadora.Suma(numero1, numero2);
+                    calculadora.Suma(numero1, numero2);
                     break;
                 case opcionUsuario.Resta:
-                    Calculadora.Resta(numero1, numero2);
+                    calculadora.Resta(numero1, numero2);
                     break;
                 case opcionUsuario.Multiplicacion:
-                    Calculadora.Multiplicación(numero1, numero2);
+                    calculadora.Multiplicación(numero1, numero2);
                     break;
                 case opcionUsuario.Division:
-                    Calculadora.División(numero1, numero2);
+                    calculadora.División(numero1, numero2);
                     break;
             }
         }   
