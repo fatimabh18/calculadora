@@ -1,4 +1,14 @@
 ﻿using System;
+using Clase.Calculadora;
+
+enum opcionUsuario
+{
+   Salir = 0,
+   Suma = 1,
+   Resta = 2,
+   Multiplicacion = 3,
+   Division = 4
+}
 class program
 {
     static void Main(string[] args)
@@ -9,16 +19,28 @@ class program
         var calculadora = new Calculadora();
         while (opcion != "5")
         {
-         Console.WriteLine("******MENU******");
-         Console.WriteLine("\n¿Que operacion desea realizar?");
-         Console.WriteLine("Opcion 1:Sumar");
-         Console.WriteLine("Opcion2:Restar");
-         Console.WriteLine("Opcion3:Multiplicar");
-         Console.WriteLine("Opcion4:Dividir");
-         Console.WriteLine("Opcion5:Salir");
-         Console.WriteLine("\nElija una opcion");
-         opcion = Console.ReadLine();
-            if (opcion == "1" || opcion == "2" || opcion == "3" || opcion == "4")
+            Console.WriteLine("******MENU******");
+            Console.WriteLine("\n¿Que operacion desea realizar?");
+            Console.WriteLine("Opcion 1: Sumar");
+            Console.WriteLine("Opcion 2: Restar");
+            Console.WriteLine("Opcion 3: Multiplicar");
+            Console.WriteLine("Opcion 4: Dividir");
+            Console.WriteLine("Opcion 5: Salir");
+            Console.WriteLine("\nElija una opcion");
+            opcionUsuario opcion = (opcionUsuario) Convert.ToInt32(Console.ReadLine());
+            switch (opcion)
+            {
+                case opcionUsuario.Suma:
+                case opcionUsuario.Resta:
+                case opcionUsuario.Multiplicacion:
+                case opcionUsuario.Division:
+                    Console.WriteLine("Introduce un numero");
+                    numero1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Introduce un segundo número");
+                    numero2 = Convert.ToInt32(Console.ReadLine());
+                    break;
+            }
+            switch (opcion)
             {
                 Console.WriteLine("Introduce un numero");
                 numero1 = Int32.Parse(Console.ReadLine());
