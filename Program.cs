@@ -14,7 +14,6 @@ class program
 {
     static void Main(string[] args)
     {
-        string opcion = "";
         var calculadora = new Calculadora();
         int numero1 = 0;
         int numero2 = 0;
