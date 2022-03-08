@@ -9,30 +9,17 @@ enum opcionUsuario
    Resta = 2,
    Multiplicacion = 3,
    Division = 4
-=======
-    Suma = 1,
-    Resta = 2,
-    Multiplicacion = 3,
-    Division = 4,
-    Salir = 0,
->>>>>>> Stashed changes
 }
 class program
 {
     static void Main(string[] args)
     {
         string opcion = "";
-        int numero1;
-        int numero2;
         var calculadora = new Calculadora();
-<<<<<<< Updated upstream
-        while (opcion != "5")
-=======
         int numero1 = 0;
         int numero2 = 0;
 
         while ((int)opcionUsuario.Salir!=5)
->>>>>>> Stashed changes
         {
             Console.WriteLine("******MENU******");
             Console.WriteLine("\n¿Que operacion desea realizar?");
