@@ -13,11 +13,11 @@ class program
 {
     static void Main(string[] args)
     {
-        string opcion = "";
-        int numero1;
-        int numero2;
         var calculadora = new Calculadora();
-        while (opcion != "5")
+        int numero1 = 0;
+        int numero2 = 0;
+
+        while ((int)opcionUsuario.Salir != 5)
         {
             Console.WriteLine("******MENU******");
             Console.WriteLine("\n¿Que operacion desea realizar?");
