@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = calculadora
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\Educamosclm\Desktop\Calculadora\calculadora\
 =======
 build_property.ProjectDir = C:\proyectos\calculadora\
 >>>>>>> 163e8a209ab21547a0cbdd254eaca8ddcb4b6d14
+=======
+build_property.ProjectDir = c:\proyectos\calculadora\
+>>>>>>> d5a20e9c702504e62b42a13ad09943c7799023e6
