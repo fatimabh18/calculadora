@@ -42,25 +42,25 @@ class program
             }
             switch (opcion)
             {
-                Console.WriteLine("Introduce un numero");
-                numero1 = Int32.Parse(Console.ReadLine());
-                Console.WriteLine("Introduce un segundo número");
-                numero2 = Int32.Parse(Console.ReadLine());
-                if (opcion == "1")
+                case (opcionUsuario.Suma):
                 {
-                    Calculadora.Suma(numero1, numero2);
+                    calculadora.Suma(numero1, numero2);
+                    break;
                 }
-                if (opcion == "2")
+                case (opcionUsuario.Resta):
                 {
-                    Calculadora.Resta(numero1, numero2);
+                    calculadora.Resta(numero1, numero2);
+                    break;
                 }
-                if (opcion == "3")
+                case (opcionUsuario.Multiplicacion):
                 {
-                    Calculadora.Multiplicación(numero1, numero2);
+                    calculadora.Multiplicación(numero1, numero2);
+                    break;
                 }
-                if (opcion == "4")
+                case (opcionUsuario.Division):
                 {
-                    Calculadora.División(numero1, numero2);
+                    calculadora.División(numero1, numero2);
+                    break;
                 }
             } 
         }  
