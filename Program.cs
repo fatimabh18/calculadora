@@ -1,15 +1,7 @@
 ﻿using System;
 using Clase.Calculadora;
 
-enum opcionUsuario
-{
 
-   Salir = 0,
-   Suma = 1,
-   Resta = 2,
-   Multiplicacion = 3,
-   Division = 4
-}
 class program
 {
     static void Main(string[] args)
@@ -17,8 +9,8 @@ class program
         var calculadora = new Calculadora();
         int numero1 = 0;
         int numero2 = 0;
-
-        while ((int)opcionUsuario.Salir!=5)
+        OpcionUsuario opcion = 0;
+        while (opcion != OpcionUsuario.Salir)
         {
             Console.WriteLine("******MENU******");
             Console.WriteLine("\n¿Que operacion desea realizar?");
@@ -28,13 +20,13 @@ class program
             Console.WriteLine("Opcion 4: Dividir");
             Console.WriteLine("Opcion 5: Salir");
             Console.WriteLine("\nElija una opcion");
-            opcionUsuario opcion = (opcionUsuario) Convert.ToInt32(Console.ReadLine());
+            opcion = (OpcionUsuario) Convert.ToInt32(Console.ReadLine());
             switch (opcion)
             {
-                case opcionUsuario.Suma:
-                case opcionUsuario.Resta:
-                case opcionUsuario.Multiplicacion:
-                case opcionUsuario.Division:
+                case OpcionUsuario.Suma:
+                case OpcionUsuario.Resta:
+                case OpcionUsuario.Multiplicacion:
+                case OpcionUsuario.Division:
                     Console.WriteLine("Introduce un numero");
                     numero1 = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Introduce un segundo número");
@@ -43,22 +35,22 @@ class program
             }
             switch (opcion)
             {
-                case (opcionUsuario.Suma):
+                case (OpcionUsuario.Suma):
                 {
                     calculadora.Suma(numero1, numero2);
                     break;
                 }
-                case (opcionUsuario.Resta):
+                case (OpcionUsuario.Resta):
                 {
                     calculadora.Resta(numero1, numero2);
                     break;
                 }
-                case (opcionUsuario.Multiplicacion):
+                case (OpcionUsuario.Multiplicacion):
                 {
                     calculadora.Multiplicación(numero1, numero2);
                     break;
                 }
-                case (opcionUsuario.Division):
+                case (OpcionUsuario.Division):
                 {
                     calculadora.División(numero1, numero2);
                     break;
