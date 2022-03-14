@@ -47,12 +47,12 @@ class program
                 }
                 case (OpcionUsuario.Multiplicacion):
                 {
-                    calculadora.Multiplicación(numero1, numero2);
+                    calculadora.Multiplicacion(numero1, numero2);
                     break;
                 }
                 case (OpcionUsuario.Division):
                 {
-                    calculadora.División(numero1, numero2);
+                    calculadora.Division(numero1, numero2);
                     break;
                 }
             } 

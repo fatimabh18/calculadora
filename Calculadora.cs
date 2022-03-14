@@ -18,14 +18,14 @@ namespace Clase.Calculadora
             Console.WriteLine("El resultado de la resta es: " + resultado);
             return (resultado);
         }
-        public int Multiplicación(int multiplicador1, int multiplicado2)
+        public int Multiplicacion(int multiplicador1, int multiplicado2)
         {
             int resultado;
             resultado = multiplicador1 * multiplicado2;
             Console.WriteLine("El resultado de la multiplicación es: " + resultado);
             return (resultado);
         }
-        public int División(int dividendo, int divisor)
+        public int Division(int dividendo, int divisor)
         {
             int resultado;
             resultado = dividendo / divisor;
