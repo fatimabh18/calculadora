@@ -9,7 +9,7 @@ enum opcionUsuario
    Division = 4,
    Salir = 0
 }
-class program
+class Menu
 {
     static void Main(string[] args)
     {
