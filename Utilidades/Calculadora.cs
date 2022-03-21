@@ -34,7 +34,17 @@ namespace Clase.Calculadora
         }
         public int Potencias(int basePotencia, int exponente)
         {
-            int resultado = 0;
+            
+            int resultado = basePotencia;
+            for (int i = 0; i < exponente - 1; i++)
+            {
+                resultado = resultado * basePotencia;
+            }
+            System.Console.WriteLine("El resultado de la potencia es: " + resultado);
+
+            return resultado;
+
+            /*int resultado = 0;
             double elevarNumero = Math.Pow(basePotencia, exponente);
             Console.WriteLine(String.Format("El resultado es {1}", resultado, elevarNumero));
             return resultado;
@@ -43,7 +53,7 @@ namespace Clase.Calculadora
             //    resultado = basePotencia ^ exponente;
             //    Console.WriteLine("El resultado de la potencia es: " + resultado);
             //}
-            //return resultado;
+            //return resultado;*/
         }
     }
 }
