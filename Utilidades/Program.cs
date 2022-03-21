@@ -9,6 +9,8 @@ class program
         var calculadora = new Calculadora();
         int numero1 = 0;
         int numero2 = 0;
+        int exponente = 0;
+        int basePotencia = 0;
         OpcionUsuario opcion = 0;
         while (opcion != OpcionUsuario.Salir)
         {
@@ -34,6 +36,13 @@ class program
                     Console.WriteLine("Introduce un segundo número");
                     numero2 = Convert.ToInt32(Console.ReadLine());
                     break;
+                case OpcionUsuario.Potencias:
+                    Console.WriteLine("Introduzca el número");
+                    basePotencia = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Introduzca el exponente");
+                    exponente = Convert.ToInt32(Console.ReadLine());
+                    break;
+
             }
             switch (opcion)
             {
@@ -59,6 +68,7 @@ class program
                 }
                 case (OpcionUsuario.Potencias):
                 {
+                    calculadora.Potencias(basePotencia, exponente);
                     break;
                 }
                 case (OpcionUsuario.ListadoOperaciones):

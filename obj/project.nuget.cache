@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ud7HGCWGDq27xjZkc8CGAa+RY4DqURTBYsBR5oX8+tqVawJ+kbhLBpaL8O53PDoO2eK+l1fIi4UfJ4wndOcD5g==",
+  "dgSpecHash": "MoP6YY6H7G+NjbxG5wghFg/LvSMkwWOHxJFoKp8lwPEhvyB4kK90qxVjWWQ03ohrZCmjlT0L1rkkqWK4Zjw1gw==",
   "success": true,
-  "projectFilePath": "C:\\proyectos\\calculadora\\calculadora.csproj",
+  "projectFilePath": "C:\\calculadora\\calculadora.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
