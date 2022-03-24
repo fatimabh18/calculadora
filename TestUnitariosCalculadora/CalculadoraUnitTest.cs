@@ -3,7 +3,7 @@ using Clase.Calculadora;
 
 namespace TestUnitariosCalculador
 {
-    public class UnitTest1
+    public class CalculadoraUnitTest
     {
         [Fact]
         public void Test_Operacion_Suma()
