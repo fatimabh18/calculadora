@@ -29,7 +29,7 @@ namespace TestUnitariosCalculador
             Calculadora calculadora=new Calculadora();
             int resultado = calculadora.Resta(minuendo, sustraendo);
             //asert
-            Assert.Equal(4,resultado);
+            Assert.Equal(0,resultado);
 
         }
         
@@ -46,6 +46,9 @@ namespace TestUnitariosCalculador
             // asert
             Assert.Equal(10, resultado);
         }
+
+        
+
 
     }
 }
