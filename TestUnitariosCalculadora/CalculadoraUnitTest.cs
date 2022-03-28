@@ -47,7 +47,18 @@ namespace TestUnitariosCalculador
             Assert.Equal(10, resultado);
         }
 
-        
+        [Fact]
+        public void Test_Operacion_Division()
+        {
+            // arrange
+            int dividendo = 4;
+            int divisor = 2;
+            // act
+            Calculadora calculadora = new Calculadora();
+            int resultado = calculadora.Division(dividendo, divisor);
+            // asert
+            Assert.Equal(2, resultado);
+        }
 
 
     }
