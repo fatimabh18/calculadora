@@ -17,5 +17,20 @@ namespace TestUnitariosCalculador
             // asert
             Assert.Equal(4, resultado);
         }
+
+        [Fact]
+        public void Test_Operacion_Resta()
+        {
+            //arrange
+            int minuendo = 2;
+            int sustraendo = 2;
+            //act
+            Calculadora calculadora=new Calculadora();
+            int resultado = calculadora.Resta(minuendo, sustraendo);
+            //asert
+            Assert.Equal(4,resultado);
+
+        }
+        
     }
 }
