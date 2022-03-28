@@ -17,5 +17,17 @@ namespace TestUnitariosCalculador
             // asert
             Assert.Equal(4, resultado);
         }
+        [Fact]
+        public void Test_Operacion_Multiplicacion()
+        {
+            // arrange
+            int multiplicador1 = 2;
+            int multiplicador2 = 5;
+            // act
+            Calculadora calculadora = new Calculadora();
+            int resultado = calculadora.Multiplicacion(multiplicador1, multiplicador2);
+            // asert
+            Assert.Equal(10, resultado);
+        }
     }
 }
