@@ -14,16 +14,8 @@ class program
         OpcionUsuario opcion = 0;
         while (opcion != OpcionUsuario.Salir)
         {
-            Console.WriteLine("******MENU******");
-            Console.WriteLine("\n¿Que operacion desea realizar?");
-            Console.WriteLine("Opcion -1: Salir");
-            Console.WriteLine("Opcion 1: Sumar");
-            Console.WriteLine("Opcion 2: Restar");
-            Console.WriteLine("Opcion 3: Multiplicar");
-            Console.WriteLine("Opcion 4: Dividir");
-            Console.WriteLine("Opcion 5: Potencias");
-            Console.WriteLine("Opcion 6: Ver listado de operaciones");
-            Console.WriteLine("\nElija una opcion");
+            CalculadoraServices Calcu = new CalculadoraServices();
+            Calcu.Ejecutar();
             opcion = (OpcionUsuario) Convert.ToInt32(Console.ReadLine());
             switch (opcion)
             {
