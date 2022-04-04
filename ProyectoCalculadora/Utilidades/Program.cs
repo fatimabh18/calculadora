@@ -65,6 +65,7 @@ class program
                 }
                 case (OpcionUsuario.ListadoOperaciones):
                 {
+                        calculadora.ListadoOperaciones();
                     break;
                 }
             } 
