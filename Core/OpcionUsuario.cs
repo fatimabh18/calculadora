@@ -1,4 +1,4 @@
-﻿enum OpcionUsuario
+﻿public enum OpcionUsuario
   {
     Salir = -1,
     Suma = 1,
